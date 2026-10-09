@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_max="440dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.08"
+                android:text="@string/caption"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/line"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:background="@color/red_frame" />
+
+                    <TextView
+                        android:id="@+id/studentView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="6dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="18dp"
+                        android:text="@string/student"
+                        android:textColor="@color/ink"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/correctIcon"
+                android:layout_width="148dp"
+                android:layout_height="132dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/correct_icon_desc"
+                android:scaleType="fitCenter"
+                android:src="@drawable/test_icon"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/resultView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/ink"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:text="@string/result_correct"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.DialogsLab.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/button_1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.DialogsLab.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/button_2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.DialogsLab.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/button_3" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.DialogsLab.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/button_4" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Диалоги</string>
+    <string name="caption">Toast и диалоговые окна</string>
+    <string name="student">Волошенко Кирилл Андреевич\nгруппа Т-433901-ИСТ</string>
+
+    <string name="button_1">Кнопка 1\nToast на 2 секунды</string>
+    <string name="button_2">Кнопка 2\nToast на 3,5 секунды</string>
+    <string name="button_3">Кнопка 3\nДиалог</string>
+    <string name="button_4">Кнопка 4\nТест</string>
+
+    <string name="toast_button_1">кнопка номер 1 нажата</string>
+    <string name="toast_button_2">кнопка номер 2 нажата</string>
+    <string name="toast_closed">Диалоговое окно закрыто</string>
+    <string name="toast_correct">Всё верно</string>
+
+    <string name="dialog3_title">кнопка 3</string>
+    <string name="dialog3_message">Покрасить надписи на всех кнопках в красный?</string>
+    <string name="yes">да</string>
+    <string name="cancel">отмена</string>
+
+    <string name="quiz_title">Отметьте только музыкальные инструменты</string>
+    <string name="check">Проверить</string>
+
+    <string name="result_correct">Всё верно</string>
+    <string name="result_wrong">Ответ неверный — кнопки скрыты</string>
+    <string name="correct_icon_desc">Отметка верного ответа</string>
+</resources>
